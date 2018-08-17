@@ -1,0 +1,40 @@
+{
+  "name": "warsawjs-workshop-23-project",
+  "version": "0.1.0",
+  "description": "Projekt na potrzeby warsztatów WarsawJS #23 z testów end-to-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:puppeteer; npm run test:testcafe; npm run test:nightwatch",
+    "test:puppeteer": "node puppeteer/index.js",
+    "test:testcafe": "npx testcafe chrome testcafe/index.js -s .",
+    "test:nightwatch": "node nightwatch/runner.js -c nightwatch/nightwatch.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mykulyak/warsawjs-workshop-23-project.git"
+  },
+  "keywords": [
+    "WarsawJS",
+    "Testing",
+    "End-to-end",
+    "Nightwatch.js",
+    "TestCafe",
+    "Selenium",
+    "Puppeteer",
+    "Cucumber.js"
+  ],
+  "author": "Andriy Mykulyak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mykulyak/warsawjs-workshop-23-project/issues"
+  },
+  "homepage": "https://github.com/mykulyak/warsawjs-workshop-23-project#readme",
+  "dependencies": {
+    "chromedriver": "^2.41.0",
+    "cucumber": "^4.2.1",
+    "geckodriver": "^1.12.2",
+    "nightwatch": "^0.9.21",
+    "puppeteer": "^1.7.0",
+    "testcafe": "^0.21.1"
+  }
+}
